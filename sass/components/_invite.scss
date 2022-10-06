@@ -1,0 +1,61 @@
+.invite-block {
+  margin-top: 60px;
+  
+ @media screen and (min-width: 768px) {
+  margin-top: 0px;
+ 
+}
+@media screen and (min-width: 1200px) {
+  margin-left: 70px;
+ 
+}
+}
+.invite-block__title {
+  margin-bottom: 20px;
+  text-align: center;
+
+  color: var(--color-mainWhite);
+  font-size: 14px;
+  font-weight: 700;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.invite-list {
+  display: flex;
+  background-color: var(--color-darckGray);
+  margin-left: 0;
+  gap: 10px;
+  justify-content: center;
+}
+.invite-list__item {
+  width: 44px;
+  height: 44px;
+}
+.invite-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-middleGrey);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    background-color: var(--color-mainBlue);
+  }
+}
+.invite-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-mainWhite);
+}
+

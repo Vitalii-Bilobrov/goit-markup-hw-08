@@ -1,0 +1,38 @@
+.address-block {
+  margin-top: 20px;
+  
+}
+.address-list__item {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--color-mainWhite);
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+}
+}
+.address-list__item:last-child {
+  margin-bottom: 0px;
+}
+.address-list__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    color: var(--color-mainBlue);
+  }
+}
+.address-list__link--white {
+  color: var(--color-mainWhite);
+}
+

@@ -1,0 +1,42 @@
+.social-networks {
+  display: flex;
+
+  margin-top: 16px;
+  margin-left: 32px;
+  width: 206px;
+  height: 44px;
+
+  gap: 10px;
+  background-color: var(--color-mainWhite);
+}
+.social-networks__item {
+  width: 44px;
+  height: 44px;
+}
+.social-networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--color-middleGrey);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    background-color: var(--color-mainBlue);
+    color: var(--color-mainWhite);
+  }
+}
+.social-networks__icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}

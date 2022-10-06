@@ -1,0 +1,125 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--color-mainWhite);
+  color: var(--color-mainBlack);
+  z-index: 999;
+  padding: 48px 40px;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+
+  margin-right: auto;
+  margin-left: auto;
+}
+.mobile-menu {
+  margin-bottom: auto;
+
+  list-style: none;
+}
+.mobile-menu .link {
+  display: block;
+  color: var(--color-veryDark);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+}
+.menu-toggle__icon {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  display: block;
+  margin-top: 10;
+
+}
+.current{
+  color: var(--color-mainBlue);
+}
+.mobile-menu > .mobile-menu__list:nth-child(1) {
+  color: var(--color-mainBlue);
+}
+.mobile-menu > .mobile-menu__list:nth-child(2) {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.mobile-menu > .mobile-menu__list:nth-child(3) {
+  margin-bottom: auto;
+}
+
+.mobile-menu .link {
+  padding: 0;
+  color: currentColor;
+}
+
+.tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+
+  color: var(--color-mainBlue);
+}
+.tel-link {
+  margin-bottom: 32px;
+}
+.add {
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  margin-bottom: 64px;
+  color: var(--color-lightGray);
+}
+.social-block {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+  gap: 20px;
+}
+.social-block__item1:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.social-block__link1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: var(--color-mainBlue);
+}
