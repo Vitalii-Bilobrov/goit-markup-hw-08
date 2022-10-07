@@ -12,11 +12,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap:10px;
   }
   @media screen and(min-width: 1200px) {
     flex-direction: row;
+    gap:50px;
   }
-}
+  }
+
 .contacts__link {
   display: flex;
   align-items: center;
@@ -41,12 +44,7 @@
     padding: 32px 0;
   }
 }
-.contacts__item:last-child {
-  margin-left: 0;
-  @media screen and(min-width: 1200px) {
-    margin-left: 50px;
-  }
-}
+
 .contacts__icon {
   margin-right: 10px;
 

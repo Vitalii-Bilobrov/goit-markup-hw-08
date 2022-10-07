@@ -1,13 +1,10 @@
 .social-networks {
   display: flex;
+  justify-content: center;
 
   margin-top: 16px;
-  margin-left: 32px;
-  width: 206px;
-  height: 44px;
 
   gap: 10px;
-  background-color: var(--color-mainWhite);
 }
 .social-networks__item {
   width: 44px;

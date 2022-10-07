@@ -29,14 +29,17 @@
   }
 
 .advantages-list__title {
+  text-align: left;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
-  display: block;
-  margin-bottom: 10px;
   line-height: 1.4;
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    text-align: center;
+}
 }
 .advantages-description {
   color: var(--color-lightGray);
